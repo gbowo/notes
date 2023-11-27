@@ -1,4 +1,4 @@
-# Array
+# 数组
 ## 快速入门
 ### 定义
 ``` java {.line-numbers}
@@ -106,3 +106,28 @@ public class ArrayAdd{
 
 
 ## 二维数组
+### 定义
+``` java {.line-numbers}
+public class TwoDimensionalArray02{
+    public static void main(String[] args){
+        int arr[][] = new int[2][3];
+
+        arr[1][1] = 8;
+        for(int i = 0;i < arr.length;i++){
+            for(int j = 0;j<arr[i].length;j++){
+                System.out.print(arr[i][j]+" ");
+            }
+            System.out.println(); //换行
+        }
+    }
+}
+```
+法二：动态初始化
+``` java {.line-numbers}
+int arr[][];
+arr = new int[2][3];
+```
+法三：列数不确定动态初始化
+``` java {.line-numbers}
+int[][] arr = new int[3][];
+```
