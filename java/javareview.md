@@ -17,13 +17,13 @@ Lab1~Lab3
 ## Chapter 1 Introduction to Computers,Programs and Java
 
 ### Terminologies:
-(1)**Modularity(模块化)**: The source code for anobject canbewritten and maintained independentlyof thesourcecode for other objects. After it is created, anobjectcan be easily passed around insidethesystem.(对象的源代码可以独立于其他对象的源代码来编写和维护，创建后，对象可以轻易地在系统内传递)
-(2)**Information-hiding(信息隐藏)**: By interacting only with an object’s methods, the details of its internal implementation remain hidden from the outside world.
-(3)**Code re-use(代码复用)**: If an object already exists(perhapswritten by another software developer), you can use that object in your program. This allows specialists to implement, test, and debug complex, task-specific objects, which you can thentrust torun in your own code.
-(4)**Pluggability and debugging ease(可插拔性和调试简便性)**: If aparticularobject is found to be problematic, you can simply remove it from your application and plugin a different object as its replacement.
-(5)**JVM(Java Virtual Machine)**: java虚拟机
-(6)**JRE(Java Routine Environment)**: java类库
-(7)**JDK(Java Development Kit)**: java开发工具包
+1. **Modularity(模块化)**: The source code for anobject canbewritten and maintained independentlyof thesourcecode for other objects. After it is created, anobjectcan be easily passed around insidethesystem.(对象的源代码可以独立于其他对象的源代码来编写和维护，创建后，对象可以轻易地在系统内传递)
+2. **Information-hiding(信息隐藏)**: By interacting only with an object’s methods, the details of its internal implementation remain hidden from the outside world.
+3. **Code re-use(代码复用)**: If an object already exists(perhapswritten by another software developer), you can use that object in your program. This allows specialists to implement, test, and debug complex, task-specific objects, which you can thentrust torun in your own code.
+4. **Pluggability and debugging ease(可插拔性和调试简便性)**: If aparticularobject is found to be problematic, you can simply remove it from your application and plugin a different object as its replacement.
+5. **JVM(Java Virtual Machine)**: java虚拟机
+6. **JRE(Java Routine Environment)**: java类库
+7. **JDK(Java Development Kit)**: java开发工具包
 
 
 ## Chapter 2 Elementary Programing
