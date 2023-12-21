@@ -253,6 +253,24 @@ Circle[] circleArray = new Circle[10];
 2. The Cloeable Interfaces(可克隆接口)
    Cloneable接口是一个空接口，一个方法体为空的接口称为标记接口(marker interface),它用来表示一个类拥有某些希望具有的特征.
 
+   实现Clonable接口的类标记为可克隆的，而且它的对象可以使用在Object类中定义的clone()方法克隆：
+   ``` java {line.numbers}
+   package java.lang;
+   public interface Cloneable { 
+   }
+   ```
+   Object类定义了一个clone方法，其方法头是：
+   ``` java
+   protected native Object clone() throws 
+   CloneNotSupportedException;
+   ```
+   关键字native表示这个方法不是用Java写的，但它是在JVM中针对
+   本地平台实现的。
+   关键字protected限定方法只能在同一个包中或其子类中访问。通
+   常其他类必须重写该方法并将它的可见性修改为public，这样重写的
+   clone方法可以在任何一个包中使用
+   Object类的clone方法完成了克隆对象的任务，实现浅拷贝。
+
    **一个对象能被克隆，通常需满足如下两个条件**
    1. 实现Cloneable接口，使拷贝合法，避免抛出CloneNotSupportedException
    2. 重写clone方法
@@ -260,11 +278,247 @@ Circle[] circleArray = new Circle[10];
 3. 浅拷贝和深拷贝
    1. 浅拷贝(Shallow Copy):拷贝对象时仅仅拷贝对象本身，包括对象中的基本变量，而不拷贝对象包含的引用指向的对象。
    2. 深拷贝(Deep Copy):不仅拷贝对象本身，而且拷贝对象包含的引用指向的所有对象
+   Exp:
+   浅拷贝：
+     House house1 = new House(1, 1750.50);
+     House house2 = (House)house1.clone();
+     Object类中的 clone 方法将原始对象的每个数据域复制给目标对象。如果一个数据域是基本类型，复制的就是它的值；
+     如果一个数据域是对象，复制的就是其引用。例如，whenbuilt是DATE类，它的引用被复制给house2。
+   深拷贝：
+     House house1 = new House(1, 1750.50);
+     House house2 = (House)house1.clone();
+     house1==house2为假，house1.whenBuilt == house2. whenBuilt为假，即house1和house2包含2个不同的Date对象。
 
+4. sort方法
+   由于所有 Comparable 对象都有 compareTo 方法，如果对象是 Comparable 接口类型的实例的话，Java API 中的 
+   java.util.Arrays.sort(Object [ ]) 方法就可以使用compareTo 方法来对数组中的对象进行比较和排序。
+   The java.util.Arrays.sort(array) method requires that the elements in an array are instances of Comparable<E>.
 
+5. Comparable方法
+   Comparable接口定义了compareTo方法，用于比较对象
+   ``` java {.line-numbers}
+   // This interface is defined in 
+   // java.lang package
+    package java.lang;
+    public interface Comparable<E> {
+    public int compareTo(E o);
+    }  
+   ```
+   Comparable接口是一个范型接口，在实现该接口时，范型类型E被替换成一种具体的类型。compareTo方法判断这个对象相对于给定对象o的
+   顺序，并且当这个对象小于、等于或大于给定对象o时，分别返回负整数、0或正整数。
+
+6. Interface v.s. Abstract class
+   在接口中，数据必须是常量；在抽象类中，它可以拥有所有类型的数据；
+   接口中的所有方法只有签名没有实现，而抽象类可以有方法的具体实现；
+   所有类共享一个根，但接口没有单一的根，与类一样，接口也有定义类型；
+   接口类型的变量可以引用实现该接口的类的所有实例。
+   
 ## Chapter 14 JavaFX Basics
 
 1. 在一个窗体中显示按钮
    ``` java
    import javafx.application.Application;
    ```
+
+## 选择题库遇到的问题补充
+
+1. final关键字
+   1. 当用final修饰一个类时，表明这个类不能被继承。也就是说，如果一个类你**永远不会让他被继承**，就可以用final进行修饰。final类中的成员变量可以根据需要设为final，但是要注意final类中的所有成员方法都会被隐式地指定为final方法。
+   2. 使用final方法的原因有两个。第一个原因是把方法锁定，**以防任何继承类修改它的含义**；第二个原因是效率。在早期的Java实现版本中，会将final方法转为内嵌调用。但是如果方法过于庞大，可能看不到内嵌调用带来的任何性能提升。在最近的Java版本中，不需要使用final方法进行这些优化了。
+   3. 对于一个final变量，如果是基本数据类型的变量，则其**数值一旦在初始化之后便不能更改**；如果是引用类型的变量，则在对其初始化之后便不能再让其指向另一个对象。
+   
+2. Int超过范围不会报溢出错误
+   An integer literal can be assigned to an integer variable as long as it can fit into the variable. A compilation error would occur if the literal were too large for the variable to hold. For example, the statement byte b = 1000 would cause a compilation error, because 1000 cannot be stored in a variable of the byte type.
+
+3. true是一个Boolean Literal，不是和1相等的值
+4. random(): Returns a random double value in the range [0.0, 1.0).
+5. homework_1
+   point and its distance to the center. Here are sample runs:  
+   <output>
+   The point is (-3.3878721143708708, 3.1409080280010944) and its distance to the center is 4.619846393950072
+   <end output>
+   <output>
+   The point is (-0.14972878708817536, 4.986535034124079) and its distance to the center is 4.9887824522852995
+   <end output>
+   Answers:
+
+   ``` java {.line-numbers}
+   package com.itheima.demo1;
+
+   import java.util.Random;
+
+   public class homework01 {
+       public static void main(String[] args) {
+           //生成一个圆心为(0,0),半径为5的圆内的随机一点，并打印它到圆心的距离
+
+          //生成一个random对象
+          Random rd = new Random();
+          //生成随机点坐标
+          double x = (rd.nextDouble() * 10) - 5;
+          double y = (rd.nextDouble() * 10) - 5;
+          //计算到圆心距离
+          double distance = Math.sqrt(x * x + y * y);
+          //打印
+          System.out.println("The point is (" + x + "," + y + ") and its distance to the center is " + distance);
+       }
+   }
+   ```
+6. homework_2
+   Write a program that displays a menu as shown in the sample run. You can enter 1, 2, 3, or 4 for choosing an addition, subtraction, multiplication, or division test. After a test is finished, the menu is redisplayed. You may choose another test or enter 5 to exit the system. Each test generates two random single-digit numbers to form a question for addition, subtraction, multiplication, or division. For a subtraction such as number1 – number2, number1 is greater than or equal to number2.  For a division question such as number1 / number2, number2 is not zero.
+   <Output>
+   Main menu
+   1: Addition
+   2: Subtraction
+   3: Multiplication
+   4: Division
+   5: Exit
+   Enter a choice: 1<enter icon>
+   What is 1 + 7? 8<enter icon>
+   Correct
+
+   Main menu
+   1: Addition
+   2: Subtraction
+   3: Multiplication
+   4: Division
+   5: Exit
+   Enter a choice: 1<enter icon>
+   What is 4 + 0? 5<enter icon>
+   Your answer is wrong. The correct answer is 4
+
+   Main menu
+   1: Addition
+   2: Subtraction
+   3: Multiplication
+   4: Division
+   5: Exit
+   Enter a choice: 4<enter icon>
+   What is 4 / 5? 1<enter icon>
+   Your answer is wrong. The correct answer is 0
+
+   Main menu
+   1: Addition
+   2: Subtraction
+   3: Multiplication
+   4: Division
+   5: Exit
+   Enter a choice:
+   <End Output>
+   
+   Answers:
+   ``` java {.line-numbers}
+   package com.itheima.demo1;
+
+   import java.util.Random;
+   import java.util.Scanner;
+
+   public class homework02 {
+       public static void main(String[] args) {
+           //口算题卡，自动生成两位数，给出加减乘除的运算菜单，用户输入计算结果，计算结果与正确答案比较并输出是否正确
+           //循环内进行，提供循环推出的条件
+
+           //创建输入和随机对象
+           Scanner sc = new Scanner(System.in);
+           Random rd = new Random();
+           //创建选择菜单
+           int choice;
+           do {
+               System.out.println("Menu:");
+               System.out.println("1. Addition");
+               System.out.println("2. Subtraction");
+               System.out.println("3. Multiplication");
+               System.out.println("4. Division");
+               System.out.println("5. Exit");
+               System.out.print("Enter your choice: ");
+               choice = sc.nextInt();
+               while (choice > 5 || choice < 1) {
+                   System.out.println("输入非法数字，请再次选择:");
+                   choice = sc.nextInt();
+               }
+               int num1 = rd.nextInt(200);
+               int num2 = rd.nextInt(200);
+               //switch语句进行四种情况的分别处理
+               switch (choice) {
+                   case 1:
+                       int ans1 = num1 + num2;
+                       System.out.println(num1 + "+" + num2 + "=?");
+                       int userAns1 = sc.nextInt();
+                       if (ans1 == userAns1) {
+                           System.out.println("答案正确！");
+                       } else {
+                           System.out.println("输入错误！正确答案是：" + ans1);
+                       }
+                       break;
+                   case 2:
+                       int ans2 = num1 - num2;
+                       System.out.println(num1 + "-" + num2 + "=?");
+                       int userAns2 = sc.nextInt();
+                       if (ans2 == userAns2) {
+                           System.out.println("答案正确！");
+                       } else {
+                           System.out.println("输入错误！正确答案是：" + ans2);
+                       }
+                       break;
+                   case 3:
+                       int ans3 = num1 * num2;
+                       System.out.println(num1 + "*" + num2 + "=?");
+                       int userAns3 = sc.nextInt();
+                       if (ans3 == userAns3) {
+                           System.out.println("答案正确！");
+                       } else {
+                           System.out.println("输入错误！正确答案是：" + ans3);
+                       }
+                       break;
+                   case 4:
+                       System.out.println(num1 + "/" + num2 + "=?");
+                       int userAns4 = sc.nextInt();
+                       if (num1 / num2 == userAns4 && num2 != 0) {
+                           System.out.println("答案正确！");
+                       } else {
+                           System.out.println("输入错误！正确答案是：" + num1/num2);
+                       }
+                   default:
+                       break;
+               }
+           } while (choice != 5);
+
+       }
+   }
+   ```
+7. homework_3
+   Write a method that parses a decimal number into a binary number as a string. The method header is:
+   public static String decimalToBinary(int value)
+   Write a test program that prompts the user to enter a decimal integer value and displays the corresponding binary value.
+   <Output>
+   Enter an integer: 1451
+   The binary value is 10110101011
+   <End Output>
+   Answers:
+   ``` java {.line-numbers}
+   package com.itheima.demo1;
+
+   import java.util.Scanner;
+
+   public class DecimalToBinary {
+       public static void main(String[] args) {
+           //输入一个十进制整数，并输出它的二进制形式，以字符串的类型
+           Scanner sc = new Scanner(System.in);
+           System.out.println("输入一个十进制整数：");
+           int decimal = sc.nextInt();
+           System.out.println("它的二进制形式为："+decimalToBinary(decimal));
+       }
+       public static String decimalToBinary(int decimal){
+           if(decimal == 0){
+               return "0";
+           }
+           StringBuilder sb = new StringBuilder();
+           while(decimal!=0){
+               int temp = decimal%2;
+               sb.insert(0,temp); //在字符串索引为0的位置更新字符
+               decimal/=2;
+           }
+           return sb.toString();
+       }
+   }
+   ```
+
