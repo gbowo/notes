@@ -23,3 +23,17 @@ MyBatis-Plus是一个Mybatis的增强工具，简化了开发。
 ### 添加依赖
 
 
+![Alt text](image-11.png)
+
+
+### 全局配置
+
+
+配置数据库相关信息
+
+![Alt text](image-12.png)
+
+
+添加@MapperScan注解
+
+![Alt text](image-13.png)
