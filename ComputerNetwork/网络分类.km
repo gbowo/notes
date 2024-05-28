@@ -1,0 +1,64 @@
+{
+    "root": {
+        "data": {
+            "id": "d18d43ialx40",
+            "created": 1715587783564,
+            "text": "通信网络"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "d18d4t4tops0",
+                    "created": 1715587839346,
+                    "text": "电路交换网络"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d18d53noyhs0",
+                            "created": 1715587862255,
+                            "text": "FDM"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d18d56fbiig0",
+                            "created": 1715587868279,
+                            "text": "TDM"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d18d4xlxc880",
+                    "created": 1715587849087,
+                    "text": "分组交换网络"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d18d5a6pge00",
+                            "created": 1715587876465,
+                            "text": "虚电路网络"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d18d5f8s8jc0",
+                            "created": 1715587887475,
+                            "text": "数据报网络"
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "structure",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
