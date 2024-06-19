@@ -176,7 +176,7 @@ rdt2.0：经具有比特差错信道的可靠数据传输
    1. 用校验和来检测比特差错
 2. 问题：怎样从差错中恢复：
    1. 确认(ACK):接收方显式地告诉发送方分组已被正确接收
-   2. 否定确认(NCK):接受方显式地告诉发送方分组发生了差错
+   2. 否定确认(NAK):接受方显式地告诉发送方分组发生了差错
       1. 发送方收到NAK后，发送方重传分组
 3. rdt2.0中的新机制：采用差错控制编码进行差错检测
    1. 发送方差错控制编码、缓存
@@ -220,7 +220,7 @@ rdt2.1
 1. 发送方没有给确认
 2. 接收方发送ACK，接收方收到是老分组，则ACK错误，是下一个分组则ACK正确
 
-kendingqueren(positive acknowledgment)与否定确认(negative acknowledgment)
+肯定确认(positive acknowledgment)与否定确认(negative acknowledgment)
 基于重传机制的可靠数据传输协议称为自动重传请求(Automatic Repeat reQuest ARQ)协议
 三种协议功能来处理存在比特差错的情况
 1. 差错检测：使接收方检测到何时出现了比特差错，比特汇集在检验和字段中
@@ -364,7 +364,7 @@ GBN协议和SR协议的异同
 
 概述：
 1. 点对点，可靠、有序
-2. 管道话：TCP拥塞控制和流量控制设置窗口大小
+2. 管道化：TCP拥塞控制和流量控制设置窗口大小
 3. 全双工
 4. 面向连接
 5. 流量控制
@@ -378,7 +378,7 @@ TCP报文段结构
 TCP往返延时(RTT)和超时
 1. 预估RTT
    1. SampleRTT：
-      1. EstimatedRTT=(1-α)*EstimatedRTT+α*SampleRTT
+      1. EstimatedRTT=(1-α)* EstimatedRTT+α *SampleRTT
          1. 指数加权移动平均
          2. 过去样本影响指数衰减
          3. 推荐α=0.125

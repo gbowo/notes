@@ -1,0 +1,1392 @@
+{
+    "root": {
+        "data": {
+            "id": "d22xuqaj72g0",
+            "created": 1718693091528,
+            "text": "链路层"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "d22xv1z3pq00",
+                    "created": 1718693116958,
+                    "text": "链路层概述"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d22xyw0lwe80",
+                            "created": 1718693417445,
+                            "text": "一些术语"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d22y00c4b1k0",
+                                    "created": 1718693505212,
+                                    "text": "节点(node)"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d22y08yv5dc0",
+                                    "created": 1718693524002,
+                                    "text": "链路(link)"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d22y0e41kg80",
+                                    "created": 1718693535199,
+                                    "text": "帧(frame)"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d22y0msakko0",
+                                    "created": 1718693554079,
+                                    "text": "数据链路层：负责从一个节点通过链路将帧发送到相邻物理节点"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d22xyz7ybkw0",
+                            "created": 1718693424419,
+                            "text": "数据报在不同链路上以不同的链路协议传送"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d22y0vyg5w80",
+                                    "created": 1718693574043,
+                                    "text": "第一条链路：以太网"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d22y129c29c0",
+                                    "created": 1718693587761,
+                                    "text": "中间链路：帧中继链路"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d22y18wbi5c0",
+                                    "created": 1718693602212,
+                                    "text": "最后一条：802.11"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d22xzk9e7gw0",
+                            "created": 1718693470220,
+                            "text": "链路层提供的服务"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d22y1kht05c0",
+                                    "created": 1718693627456,
+                                    "text": "成帧(framing)：网络层数据报经链路层协议用链路层帧封装起来"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d22y24wkjqw0",
+                                    "created": 1718693671884,
+                                    "text": "链路接入：媒体访问控制(Medium Access Control,MAC)协议"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d22y2lffn2o0",
+                                    "created": 1718693707853,
+                                    "text": "可靠交付：通过确认和重传实现"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d22y3n6t8y80",
+                                    "created": 1718693790050,
+                                    "text": "差错检测和纠正：前者发送方发送差错检测比特，接收方差错检测，后者还能定位差错的位置。"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d22xzq5q3j40",
+                            "created": 1718693483058,
+                            "text": "链路层在哪里实现"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d22y4njo4h40",
+                                    "created": 1718693869191,
+                                    "text": "主机、路由器、交换机的每一个端口"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d22y4uub4540",
+                                    "created": 1718693885072,
+                                    "text": "功能在网络适配器(network adapter,又称网络接口卡，Network Interface Card,NIC)实现，或芯片组"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d22y5aalodc0",
+                                    "created": 1718693918709,
+                                    "text": "主机系统总线上"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d22y5jxcln40",
+                                    "created": 1718693939676,
+                                    "text": "硬件、软件和固件的综合体"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d22xzwmvzbs0",
+                            "created": 1718693497156,
+                            "text": "适配器通信"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d22y5rnmp1c0",
+                                    "created": 1718693956502,
+                                    "text": "发送方"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d22y7lurgxs0",
+                                            "created": 1718694100601,
+                                            "text": "帧中封装数据报"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d22y7tgfii00",
+                                            "created": 1718694117149,
+                                            "text": "加上差错控制编码，实现RDT和流量控制等"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d22y7j0cn540",
+                                    "created": 1718694094409,
+                                    "text": "接收方"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d22y832tnuw0",
+                                            "created": 1718694138094,
+                                            "text": "检查有无出错，实现发送方功能"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d22y8cuk4xk0",
+                                            "created": 1718694159362,
+                                            "text": "解封装数据报并交付上层"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d22xv5oe3lk0",
+                    "created": 1718693125017,
+                    "text": "差错检测和纠正技术"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d22yc1j6ou80",
+                            "created": 1718694448186,
+                            "text": "一些概念"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d22yc988w7s0",
+                                    "created": 1718694464939,
+                                    "text": "比特级差错检测和纠正(bit-level error detection and correction)"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d22ycm100u00",
+                                    "created": 1718694492799,
+                                    "text": "差错检测和纠正比特(Error-Detection and Correction,EDC)"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d22yd59doio0",
+                                    "created": 1718694534665,
+                                    "text": "未检出比特差错(undetected bit error)"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d22ydggppsw0",
+                                    "created": 1718694559053,
+                                    "text": "前向纠错(Forward Error Correction,FEC)"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d22ydzqbhfk0",
+                            "created": 1718694600992,
+                            "text": "检测差错技术"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d22ye4p0haw0",
+                                    "created": 1718694611797,
+                                    "text": "奇偶校验(parity)"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d22yf0r614g0",
+                                            "created": 1718694681584,
+                                            "text": "单bit奇偶校验(parity bit)"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d22yf8pjteo0",
+                                            "created": 1718694698901,
+                                            "text": "二维奇偶校验(two-dimensional parity)"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d22yeiwshrc0",
+                                    "created": 1718694642742,
+                                    "text": "检验和方法"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d22yfog2xr40",
+                                            "created": 1718694733157,
+                                            "text": "目标：检测在传输报文段时的错误"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d22yfw77hs00",
+                                            "created": 1718694750035,
+                                            "text": "和的反码作为Internet检验和(Internet Checksum),通过判断和是否为全1Bit"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d22yemgpluw0",
+                                    "created": 1718694650477,
+                                    "text": "循环冗余检测(Cyclic Redundancy Check,CRC)"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d22yhcg85k00",
+                                            "created": 1718694863773,
+                                            "text": "数据D为二进制，多项式D"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d22yht43pjc0",
+                                            "created": 1718694900045,
+                                            "text": "选择r位CRC附加位R，使得d+rbit刚好被G整除,R=remiander[D*2^r/G]"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d22xvese3mw0",
+                    "created": 1718693144850,
+                    "text": "多路访问链路和协议"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d22ywyco05k0",
+                            "created": 1718696086909,
+                            "text": "链路类型"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d22yzdsavtc0",
+                                    "created": 1718696277235,
+                                    "text": "点对点链路(point-to-point link)"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d22yzobuziw0",
+                                    "created": 1718696300185,
+                                    "text": "广播链路(broadcast link)"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d22z00c92y00",
+                            "created": 1718696326330,
+                            "text": "多路访问协议(multiple access protocol):规范在共享广播信道上的传输行为"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d22z13uizcw0",
+                                    "created": 1718696412330,
+                                    "text": "信道划分协议(channel partitioning protocol)"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d22z2creizs0",
+                                            "created": 1718696510096,
+                                            "text": "TDMA(time division multiple access):时间分为周期"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d22z2w967eo0",
+                                            "created": 1718696552529,
+                                            "text": "FDMA(frequency division multiple access):频率分为频段"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d22z3dafipc0",
+                                            "created": 1718696589611,
+                                            "text": "CDMA(Code Division Multiple Access,CDMA):编码加以区分"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d22z1n6djko0",
+                                    "created": 1718696454405,
+                                    "text": "随机接入协议(random access protocol)"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d22z4g8dd940",
+                                            "created": 1718696674381,
+                                            "text": "有帧发送：以信道带宽全速发送，无预先协调；多节点同时传输：发生碰撞，等待随机时延后重发"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d22z4wuo1r40",
+                                            "created": 1718696710557,
+                                            "text": "时隙ALOHA协议:只在时隙开始时发送帧，p概率重发"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d22z5vzf66w0",
+                                            "created": 1718696787032,
+                                            "text": "纯ALOHA(无时隙)：随时发"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d22z72ore140",
+                                            "created": 1718696879989,
+                                            "text": "CSMA(Carrier Sense Multiple Access,载波侦听多路访问)：传输前侦听信道(有信道传播延迟)，指数退避"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d22z83wk9aw0",
+                                            "created": 1718696961002,
+                                            "text": "具有碰撞的CSMA(CSMA with Collision Detection,CSMA/CD):检测碰撞后Adapter发送Jam信号广播碰撞"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d22z1wdzlk80",
+                                    "created": 1718696474456,
+                                    "text": "轮流协议(taking-turns protocol)"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d22zbuntp2g0",
+                                            "created": 1718697254339,
+                                            "text": "轮询(poll)"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d22zbx2iau00",
+                                            "created": 1718697259580,
+                                            "text": "令牌传递(token-passing)"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d22xvkydkzc0",
+                    "created": 1718693158273,
+                    "text": "交换局域网"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d22zcsr6mzs0",
+                            "created": 1718697328553,
+                            "text": "网络地址和MAC地址分离"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d22zd1sj2d40",
+                                    "created": 1718697348225,
+                                    "text": "IP地址和MAC地址作用不同"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d22zdhnnbbs0",
+                                            "created": 1718697382759,
+                                            "text": "IP地址分层"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d22zdk8n2cg0",
+                                            "created": 1718697388381,
+                                            "text": "MAC地址是一个平面"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d22zdaaq2n40",
+                                    "created": 1718697366740,
+                                    "text": "分离好处"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d22zds28t4o0",
+                                            "created": 1718697405409,
+                                            "text": "网卡坏了IP不变"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d22zdv4dm9c0",
+                                            "created": 1718697412068,
+                                            "text": "物理网络除IP外支持其他网络层协议"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d22zdc152680",
+                                    "created": 1718697370514,
+                                    "text": "捆绑问题"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d22ze9hbw8o0",
+                                            "created": 1718697443326,
+                                            "text": "仅使用IP地址，只能使用IP协议"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d22zegcubb40",
+                                            "created": 1718697458293,
+                                            "text": "每次节点要重写网卡IP地址"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d22zeue75tc0",
+                            "created": 1718697488850,
+                            "text": "LAN地址和ARP"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d22zi5r1ywo0",
+                                    "created": 1718697748664,
+                                    "text": "适配器LAN地址一一分配"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d22zic9sqpk0",
+                                    "created": 1718697762858,
+                                    "text": "MAC地址IEEE管理分配"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d22zih0m3co0",
+                                    "created": 1718697773187,
+                                    "text": "地址解析地址(Address Resolution Protocol,ARP)"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d22ziui3w2o0",
+                                            "created": 1718697802543,
+                                            "text": "LAN上每个IP节点都有一个ARP表"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d22zj4s1r140",
+                                            "created": 1718697824911,
+                                            "text": "ARP表：IP/MAC地址映射"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d22zjew4ajc0",
+                                            "created": 1718697846925,
+                                            "text": "寿命(TTL):地址映射失效时间"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d22zjuwipjk0",
+                                            "created": 1718697881778,
+                                            "text": "路由到其他LAN过程"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d22zexcjd9s0",
+                            "created": 1718697495279,
+                            "text": "以太网(Ethernet)"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d22zk8h4bds0",
+                                    "created": 1718697911322,
+                                    "text": "以太网帧结构"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d22zlbdbio80",
+                                            "created": 1718697995987,
+                                            "text": "前同步码(preamble)"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d22zlg6ygiw0",
+                                            "created": 1718698006486,
+                                            "text": "目的地址(dest. address)"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d22zllgdog80",
+                                            "created": 1718698017940,
+                                            "text": "源地址(source address)"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d22zlq0ew540",
+                                            "created": 1718698027858,
+                                            "text": "类型字段(type)"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d22zlu3v8940",
+                                            "created": 1718698036774,
+                                            "text": "数据字段(data)"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d22zlym01wg0",
+                                            "created": 1718698046578,
+                                            "text": "CRC(循环冗余检测)"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d22zkdyjzjk0",
+                                    "created": 1718697923260,
+                                    "text": "无连接、不可靠的服务"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d22zme2u2s00",
+                                            "created": 1718698080247,
+                                            "text": "无连接：没有握手"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d22zmhq95680",
+                                            "created": 1718698088194,
+                                            "text": "不可靠：不发送ACK或NAK给发送方"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d22zv7ywmq00",
+                                            "created": 1718698772226,
+                                            "text": "以太网MAC协议：二进制退避的CSMA/CD介质访问控制"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d22zki554xs0",
+                                    "created": 1718697932366,
+                                    "text": "802.3以太网标准：链路和物理层"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d22zkq441000",
+                                    "created": 1718697949717,
+                                    "text": "IEEE802.3z"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d22zz0o8plc0",
+                                            "created": 1718699069801,
+                                            "text": "标准以太网帧格式"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d22zz5414rk0",
+                                            "created": 1718699079463,
+                                            "text": "允许点对点链路及共享广播信道"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d22zzfv466o0",
+                                            "created": 1718699102868,
+                                            "text": "CSMA/CD共享广播信道"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d22zzlcpg9s0",
+                                            "created": 1718699114816,
+                                            "text": "点对点信道全双工"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d22zkt5j10g0",
+                                    "created": 1718697956333,
+                                    "text": "以太网使用CSMA/CD"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d22zztrgna80",
+                                            "created": 1718699133122,
+                                            "text": "无时隙"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d22zzy6cxv40",
+                                            "created": 1718699142730,
+                                            "text": "载波侦听"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d2300zcrnfc0",
+                                            "created": 1718699223659,
+                                            "text": "冲突检测"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d23013km4kg0",
+                                            "created": 1718699232840,
+                                            "text": "随机时间重传"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d22zkz75ea80",
+                                    "created": 1718697969492,
+                                    "text": "转发器(repeater)"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d22zy0j8xeo0",
+                                            "created": 1718698991135,
+                                            "text": "物理层设备，接入端接收信号输出端再生信号，得到更长运行距离"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d22zf2x4bxc0",
+                            "created": 1718697507408,
+                            "text": "交换机(switch)"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d2301cf0jiw0",
+                                    "created": 1718699252093,
+                                    "text": "一些概念"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d2301mj88eo0",
+                                            "created": 1718699274115,
+                                            "text": "过滤(flitering):决定一个帧转发或丢弃"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d23045va80g0",
+                                            "created": 1718699472931,
+                                            "text": "转发(forwarding):决定导向接口并移动帧到目的接口"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d2304p6zx5s0",
+                                    "created": 1718699514998,
+                                    "text": "功能"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d2304rceep40",
+                                            "created": 1718699519679,
+                                            "text": "表项"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d2304x5h25c0",
+                                                    "created": 1718699532321,
+                                                    "text": "MAC地址"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d2304zf7p200",
+                                                    "created": 1718699537263,
+                                                    "text": "交换机接口"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d230532bmv40",
+                                                    "created": 1718699545191,
+                                                    "text": "放置时间"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d230582yh940",
+                                            "created": 1718699556113,
+                                            "text": "自学习(self-learning)"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d2305fak9kg0",
+                                                    "created": 1718699571810,
+                                                    "text": "初始表空"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d2305ht0au80",
+                                                    "created": 1718699577279,
+                                                    "text": "记录发送节点在的网段"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d2305ngfthk0",
+                                                    "created": 1718699589580,
+                                                    "text": "老化期(aging time):经过后删除"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d230648hg9c0",
+                                            "created": 1718699626104,
+                                            "text": "即插即用(plug-and-play device)"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d2306dq7h7c0",
+                                    "created": 1718699646767,
+                                    "text": "性质"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d2306gu4ncg0",
+                                            "created": 1718699653534,
+                                            "text": "消除碰撞"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d2306kq9tc80",
+                                            "created": 1718699662008,
+                                            "text": "链路异质"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d2306q5wd600",
+                                            "created": 1718699673837,
+                                            "text": "易于网络管理"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d2306xourt40",
+                                    "created": 1718699690221,
+                                    "text": "与路由器比较"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d23070rsskg0",
+                                            "created": 1718699696930,
+                                            "text": "交换机"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d230750pzlc0",
+                                                    "created": 1718699706176,
+                                                    "text": "优点：即插即用，过滤转发速率高"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d2307dd9obc0",
+                                                    "created": 1718699724349,
+                                                    "text": "缺点：活跃拓扑限制一颗生成树，ARP流量处理量大，对广播风暴不提供保护"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d2307zwuidk0",
+                                            "created": 1718699773422,
+                                            "text": "路由器"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d23082pgr7k0",
+                                                    "created": 1718699779506,
+                                                    "text": "优点：分层寻址，不会通过路由器循环；不限制一棵生成树；使用最佳路径；可丰富拓扑结构；对广播风暴提供防火墙保护"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d2308uayg200",
+                                                    "created": 1718699839578,
+                                                    "text": "缺点：非即插即用，需要人工配置IP地址；分组处理时间长"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d22zfd5xx6w0",
+                            "created": 1718697529709,
+                            "text": "虚拟局域网(Virtual Loacl Network,VLAN)"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d230gssy5ww0",
+                                    "created": 1718700463227,
+                                    "text": "支持VLAN的交换机：允许经单一物理局域网定义多个虚拟局域网"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d230h2z06ig0",
+                                    "created": 1718700485360,
+                                    "text": "每个组构成一个VLAN，VLAN端口形成广播域"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d230hc3vj1c0",
+                                    "created": 1718700505246,
+                                    "text": "VLAN干线连接(VLAN trunking):干线端口用于互联两台VLAN交换机，属于所有VLAN"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d230hvoyohc0",
+                                    "created": 1718700547880,
+                                    "text": "802.1Q帧"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d230hyu2xi80",
+                                            "created": 1718700554719,
+                                            "text": "标准以太网帧+首部4字节VLAN标签(VLAN tag)"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d230iacwx0g0",
+                                            "created": 1718700579803,
+                                            "text": "VLAN标签包含：2字节标签协议标识符(Tag Protcol Identifier,TPID)、标签控制信息字段、优先权字段"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d22xvtbqny80",
+                    "created": 1718693176495,
+                    "text": "链路虚拟化：网络作为链路层",
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d2309f6vhk00",
+                            "created": 1718699885044,
+                            "text": "多协议标签交换(Multiprotocol Label Switching,MPLS)"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d230a4kh0bs0",
+                                    "created": 1718699940286,
+                                    "text": "目标：基于固定长度标签和虚电路，选择性标识数据报并允许路由器基于标签转发数据报来增强功能"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d230b6iwuew0",
+                                    "created": 1718700022909,
+                                    "text": "标签交换路由器(label-switch router)"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d230bihvmyo0",
+                                            "created": 1718700048968,
+                                            "text": "基于标签的值进行分组转发"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d230boqhiwo0",
+                                            "created": 1718700062549,
+                                            "text": "弹性：MPLS转发决策可与IP不同"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d230byefgqg0",
+                                            "created": 1718700083588,
+                                            "text": "与IP路由相比"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d230c3gme1s0",
+                                                    "created": 1718700094604,
+                                                    "text": "IP路由路径取决于目的地址"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d230cbhjy3s0",
+                                                    "created": 1718700112075,
+                                                    "text": "MPLS基于源和目标地址"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d230ciqa4e00",
+                                                    "created": 1718700127840,
+                                                    "text": "快速重新路由"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d230cwgktpk0",
+                                    "created": 1718700157729,
+                                    "text": "概述"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d230d2ubnbs0",
+                                            "created": 1718700171620,
+                                            "text": "基于标签的转发表-信令协议"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d230dab38tk0",
+                                                    "created": 1718700187872,
+                                                    "text": "支持逐跳和显示路由"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d230de0p6nk0",
+                                                    "created": 1718700195950,
+                                                    "text": "标签分发"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d230d04f8fs0",
+                                    "created": 1718700165701,
+                                    "text": "优点"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d230djyp53s0",
+                                            "created": 1718700208890,
+                                            "text": "",
+                                            "expandState": "expand"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d230drdvh480",
+                                                    "created": 1718700225045,
+                                                    "text": "topic路由弹性：基于Qos，基于策略的"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d230dvoqtvc0",
+                                                    "created": 1718700234410,
+                                                    "text": "快速转发"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d230e0f6cx40",
+                                                    "created": 1718700244715,
+                                                    "text": "支持流连工程，VPN"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d230e5zx7xc0",
+                                                    "created": 1718700256853,
+                                                    "text": "支持带宽等资源分配"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d22xw06smao0",
+                    "created": 1718693191433,
+                    "text": "数据中心网络",
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d230ecstwfs0",
+                            "created": 1718700271662,
+                            "text": "负载均衡器(load balancer):应用层路由"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d230f3n4iio0",
+                                    "created": 1718700330090,
+                                    "text": "接受外部客户端请求"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d230f7f328w0",
+                                    "created": 1718700338311,
+                                    "text": "将请求导入数据中心"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d230fcbfs3s0",
+                                    "created": 1718700348975,
+                                    "text": "返回结果"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d230fhro19c0",
+                            "created": 1718700360840,
+                            "text": "交换机间互联"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d230flpcc1k0",
+                                    "created": 1718700369406,
+                                    "text": "阵列间增加吞吐"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d230fq23qa80",
+                                    "created": 1718700378885,
+                                    "text": "冗余度增加可靠性"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

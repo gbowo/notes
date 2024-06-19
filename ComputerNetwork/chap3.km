@@ -1,0 +1,1415 @@
+{
+    "root": {
+        "data": {
+            "id": "d239ch5cblc0",
+            "created": 1718725514387,
+            "text": "运输层"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "d239e3hpycw0",
+                    "created": 1718725641388,
+                    "text": "概述和运输层服务"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d239hef46g00",
+                            "created": 1718725900268,
+                            "text": "传输服务和协议"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d239ikas7540",
+                                    "created": 1718725991431,
+                                    "text": "运行在端系统"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d239iw6do3c0",
+                                    "created": 1718726017286,
+                                    "text": "Internet：UDP和TCP"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d239hloa5vs0",
+                            "created": 1718725916060,
+                            "text": "网际协议(IP)"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d239owb0z6g0",
+                                    "created": 1718726487752,
+                                    "text": "网络层协议"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d239ozq6o680",
+                                    "created": 1718726495199,
+                                    "text": "尽力而为交付服务(best-effort delivery service)"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d239pdbr6600",
+                                    "created": 1718726524801,
+                                    "text": "不可靠服务(unreliable service)"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d239hs5hnyg0",
+                            "created": 1718725930161,
+                            "text": "传输层vs.网络层"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d239pl4vz140",
+                                    "created": 1718726541800,
+                                    "text": "网络层服务"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d239pq23nxc0",
+                                            "created": 1718726552516,
+                                            "text": "主机间逻辑通信"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d239q4bj8dc0",
+                                    "created": 1718726583561,
+                                    "text": "传输层服务"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d239q7f27ds0",
+                                            "created": 1718726590305,
+                                            "text": "进程间逻辑通信"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d239qb5mor40",
+                                            "created": 1718726598443,
+                                            "text": "依赖于网络层：延时、带宽"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d239qg1et9k0",
+                                            "created": 1718726609070,
+                                            "text": "对网络层服务增强：数据丢失、顺序混乱、加密"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d239qxcub7k0",
+                            "created": 1718726646767,
+                            "text": "Internet传输层协议"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d239r2q7x0g0",
+                                    "created": 1718726658460,
+                                    "text": "可靠保序:TCP"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d239rgxowpc0",
+                                            "created": 1718726689386,
+                                            "text": "多路复用解复用"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d239rlotjvc0",
+                                            "created": 1718726699734,
+                                            "text": "拥塞控制"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d239rnmq2gw0",
+                                            "created": 1718726703961,
+                                            "text": "流量控制"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d239rphyhu00",
+                                            "created": 1718726708026,
+                                            "text": "建立连接"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d239r71gzfs0",
+                                    "created": 1718726667847,
+                                    "text": "不可靠不保序：UDP"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d239rsfqyco0",
+                                            "created": 1718726714423,
+                                            "text": "多路复用解复用"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d239i3tc8sw0",
+                            "created": 1718725955548,
+                            "text": "UDP和TCP提供的服务模型"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d239qs3cpnk0",
+                                    "created": 1718726635309,
+                                    "text": "基本责任"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d239s6076200",
+                                            "created": 1718726743958,
+                                            "text": "端系统间IP交付扩展为两个进程间交付"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d239siymjkw0",
+                                    "created": 1718726772161,
+                                    "text": "多路复用(transport-layer multiplexing)和多路分解(demultiplexing)实现这一功能"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d239t6bbbrk0",
+                                    "created": 1718726822994,
+                                    "text": "最低限度运输层服务"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d239tirncfk0",
+                                            "created": 1718726850103,
+                                            "text": "数据交付"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d239tl8yy0o0",
+                                            "created": 1718726855504,
+                                            "text": "差错检查"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d239ujdn4h40",
+                                    "created": 1718726929797,
+                                    "text": "TCP额外提供的服务"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d239uoi7cww0",
+                                            "created": 1718726940957,
+                                            "text": "可靠数据传输(reliable data transfer)"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d239uyad8eg0",
+                                            "created": 1718726962251,
+                                            "text": "拥塞控制(congestion control)"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d239eenprnk0",
+                    "created": 1718725665696,
+                    "text": "多路复用和多路分解"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d239vl4aips0",
+                            "created": 1718727011949,
+                            "text": "多路复用/解复用"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d239vvlk2n40",
+                            "created": 1718727034761,
+                            "text": "解复用工作原理"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d23a1yirbxk0",
+                            "created": 1718727511307,
+                            "text": "UDP多路解复用"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d23a21c9iww0",
+                            "created": 1718727517445,
+                            "text": "TCP多路复用"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d23a24epub40",
+                            "created": 1718727524124,
+                            "text": "面向连接的多路复用：多线程Web Server"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d239elja2j40",
+                    "created": 1718725680665,
+                    "text": "无连接运输：UDP"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d23a37hxnj40",
+                            "created": 1718727609213,
+                            "text": "概念和特征"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d23a6qo3qzk0",
+                                    "created": 1718727886037,
+                                    "text": "Internet传输协议"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d23a6tbua7k0",
+                                    "created": 1718727891826,
+                                    "text": "尽力而为"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d23a6vafc480",
+                                    "created": 1718727896094,
+                                    "text": "无连接"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d23a6x0ruxs0",
+                                    "created": 1718727899864,
+                                    "text": "用途"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d23a6z7qbw00",
+                                            "created": 1718727904638,
+                                            "text": "流媒体"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d23a718apxc0",
+                                            "created": 1718727909026,
+                                            "text": "DNS"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d23a72bz3w80",
+                                            "created": 1718727911425,
+                                            "text": "SNMP"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d23a74o7x480",
+                            "created": 1718727916519,
+                            "text": "为什么有些应用更适合用UDP"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d23a7bzi7ig0",
+                                    "created": 1718727932439,
+                                    "text": "无拥塞控制和流量控制，尽可能快的发送报文段"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d23a7nl689s0",
+                                    "created": 1718727957694,
+                                    "text": "不建立连接，没有连接时延"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d23a7v7wy000",
+                                    "created": 1718727974306,
+                                    "text": "简单，支持更多活跃用户"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d23a7zeo68w0",
+                                    "created": 1718727983422,
+                                    "text": "分组首部开销小"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d23a83zsgm80",
+                            "created": 1718727993406,
+                            "text": "UDP报文段结构"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d23a9bp3mqo0",
+                                    "created": 1718728088538,
+                                    "text": "长度"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d23a9dhs5vs0",
+                                    "created": 1718728092449,
+                                    "text": "检验和"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d23a9m8mfs00",
+                                            "created": 1718728111486,
+                                            "text": "校验范围+校验和全为1通过，1溢出要回卷(+1)"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d23a9fshu1k0",
+                                    "created": 1718728097450,
+                                    "text": "源端口/目标端口号"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d23a9k5zpao0",
+                                    "created": 1718728106974,
+                                    "text": "数据"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d23a9vihwhk0",
+                            "created": 1718728131674,
+                            "text": "差错检测"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d23a9ypbp8g0",
+                                    "created": 1718728138618,
+                                    "text": "端到端原则"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d23aa0sxco00",
+                                    "created": 1718728143189,
+                                    "text": "UDP只警告不修复"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d239erafm0w0",
+                    "created": 1718725693191,
+                    "text": "可靠数据传输原理"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d23aa8zaeq00",
+                            "created": 1718728160988,
+                            "text": "可靠数据传输(RDT)原理"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d23aalv8cqw0",
+                            "created": 1718728189041,
+                            "text": "框架"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d23aaoz5t880",
+                                    "created": 1718728195809,
+                                    "text": "为上层提供服务抽象：可靠信道"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d23aawamuv40",
+                                    "created": 1718728211740,
+                                    "text": "可靠数据传输协议(reliable data transfer protocol)实现抽象"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d23ab83o8k80",
+                                    "created": 1718728237440,
+                                    "text": "单项数据传输(undirectional data transfer)"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d23abmwd8ag0",
+                            "created": 1718728269650,
+                            "text": "rdt1.0"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d23abpl13600",
+                                    "created": 1718728275495,
+                                    "text": "经完全可靠信道的可靠数据传输"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d23abyja7uo0",
+                                            "created": 1718728294981,
+                                            "text": "下层信道完全可靠"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d23ac1rwdeo0",
+                                            "created": 1718728302032,
+                                            "text": "发送方和接收方的FSM"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d23ac59xbzc0",
+                                            "created": 1718728309652,
+                                            "text": "接收端不需要提供反馈"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d23acbx4wx40",
+                            "created": 1718728324116,
+                            "text": "rdt2.0"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d23acey2voo0",
+                                    "created": 1718728330704,
+                                    "text": "经有比特差错信道的可靠数据传输"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d23aclt4hpk0",
+                                            "created": 1718728345642,
+                                            "text": "下层信道可能会出错：比特翻转"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d23acrgssv40",
+                                            "created": 1718728357957,
+                                            "text": "ACK/NAK反馈(会出错)"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d23ad8hpxxc0",
+                                            "created": 1718728395018,
+                                            "text": "差错控制编码进行差错检测"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d23m2j7nphs0",
+                                            "created": 1718761409667,
+                                            "text": "停等协议(stop-and-wait)"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d23adk3jzvk0",
+                            "created": 1718728420283,
+                            "text": "rdt2.1"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d23ae431ujs0",
+                                    "created": 1718728463788,
+                                    "text": "发送方处理出错的ACK/NAK"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d23ae9xtrmo0",
+                                            "created": 1718728476533,
+                                            "text": "发送方在数据分组中加入序列号(sequence number)"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d23aeixjec80",
+                                            "created": 1718728496107,
+                                            "text": "接受方检测"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d23af2sg1oo0",
+                            "created": 1718728539334,
+                            "text": "rdt2.2"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d23afgibdiw0",
+                                    "created": 1718728569197,
+                                    "text": "无NAK的协议"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d23afn4endk0",
+                                            "created": 1718728583593,
+                                            "text": "只使用ACK"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d23afpw53hk0",
+                                            "created": 1718728589624,
+                                            "text": "接收方对最后正确接收的分组发ACK"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d23afvp4c7s0",
+                                            "created": 1718728602260,
+                                            "text": "重复的ACK=重传"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d23ag5l7sgw0",
+                            "created": 1718728623792,
+                            "text": "rdt3.0(也称比特交替协议(alternating-bit protocol))"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d23ag8i8p7s0",
+                                    "created": 1718728630142,
+                                    "text": "具有比特差错和分组丢失的信道"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d23agk907wg0",
+                                            "created": 1718728655705,
+                                            "text": "发送方增加计时器进行超时操作"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d23agtgebvc0",
+                                            "created": 1718728675743,
+                                            "text": "设置超时时间很重要"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d23man4lpi00",
+                                            "created": 1718762045103,
+                                            "text": "ACK1 0 交替",
+                                            "layout_right_offset": {
+                                                "x": 0,
+                                                "y": 0
+                                            }
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d23ah1g02tk0",
+                            "created": 1718728693133,
+                            "text": "流水线(pipeline)"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d23aha9q05k0",
+                                    "created": 1718728712345,
+                                    "text": "提高链路利用率"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d23ahfsl4ig0",
+                                            "created": 1718728724369,
+                                            "text": "未得到确认发送多个分组"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d23ahr24sbc0",
+                                            "created": 1718728748891,
+                                            "text": "要有缓存区"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d23ahzstj8o0",
+                                            "created": 1718728767919,
+                                            "text": "流水线协议"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d23ai2h4qxs0",
+                                                    "created": 1718728773743,
+                                                    "text": "回退N步(Go-Back-N,GBN)"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d23aljfg3ko0",
+                                                            "created": 1718729045739,
+                                                            "text": "最多有N个未确认分组"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d23alo8psts0",
+                                                            "created": 1718729056215,
+                                                            "text": "累积性确认"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d23alqxct2w0",
+                                                            "created": 1718729062059,
+                                                            "text": "最老未确认分组定时器"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d23aibyesbs0",
+                                                    "created": 1718728794378,
+                                                    "text": "选择重传(Selective Repeat,SR)"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d23alyubkko0",
+                                                            "created": 1718729079290,
+                                                            "text": "单独确认"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d23am1so2xs0",
+                                                            "created": 1718729085720,
+                                                            "text": "每个未确认分组保持一个定时器"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d23aipdv0uw0",
+                            "created": 1718728823611,
+                            "text": "滑动窗口协议(Slide Window)"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d23aj6yetd40",
+                                    "created": 1718728861859,
+                                    "text": "发送窗口"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d23ajdjsf0w0",
+                                            "created": 1718728876212,
+                                            "text": "已发送但未经确认分组的序号构成"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d23ajxuipuw0",
+                            "created": 1718728920397,
+                            "text": "GBN协议和SR协议异同"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d23ak4hznww0",
+                                    "created": 1718728934876,
+                                    "text": "相同"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d23ak6klssw0",
+                                            "created": 1718728939388,
+                                            "text": "发送窗口>1"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d23ak8zdbr40",
+                                            "created": 1718728944634,
+                                            "text": "一次能发送多个未经确认的分组"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d23akdxqqmw0",
+                                    "created": 1718728955420,
+                                    "text": "不同"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d23akf90ftk0",
+                                            "created": 1718728958278,
+                                            "text": "GBN：接收窗口=1"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d23akk6h8ug0",
+                                                    "created": 1718728969009,
+                                                    "text": "只能顺序接受"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d23ako2u1go0",
+                                                    "created": 1718728977496,
+                                                    "text": "一旦一个分组没有成功发就要返回失败的再发送"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d23akyavids0",
+                                            "created": 1718728999750,
+                                            "text": "SR：接收窗口尺寸>1"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d23al4ovbf40",
+                                                    "created": 1718729013657,
+                                                    "text": "可以乱序接受"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d23al7fqulc0",
+                                                    "created": 1718729019635,
+                                                    "text": "无需重发，选择性发送失败的"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d23am9oiuk00",
+                                    "created": 1718729102884,
+                                    "text": "优点"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d23amc4wbuo0",
+                                            "created": 1718729108227,
+                                            "text": "GBN"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d23amdn1nsg0",
+                                                    "created": 1718729111501,
+                                                    "text": "简单，所需资源少"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d23amh4pxkw0",
+                                            "created": 1718729119101,
+                                            "text": "SR"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d23amj1ahuo0",
+                                                    "created": 1718729123247,
+                                                    "text": "复杂，资源多"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d23amlioci00",
+                                    "created": 1718729128652,
+                                    "text": "缺点"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d23ammmoqrc0",
+                                            "created": 1718729131071,
+                                            "text": "GBN"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d23amnq643k0",
+                                                    "created": 1718729133458,
+                                                    "text": "回退代价大"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d23amrvoyeo0",
+                                            "created": 1718729142499,
+                                            "text": "SR"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d23amtbqrvk0",
+                                                    "created": 1718729145648,
+                                                    "text": "链路容量大，延迟大，带宽大"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d23an3yqp940",
+                                    "created": 1718729168805,
+                                    "text": "适用场景"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d23an6d7rqg0",
+                                            "created": 1718729174034,
+                                            "text": "GBN：出错率低"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d23ana3463k0",
+                                            "created": 1718729182130,
+                                            "text": "SR：链路容量大"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d23aneir5jk0",
+                                    "created": 1718729191783,
+                                    "text": "窗口最大尺寸"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d23anhg9irk0",
+                                            "created": 1718729198163,
+                                            "text": "GBN:2^N-1"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d23anl77c7k0",
+                                            "created": 1718729206322,
+                                            "text": "SR:2^(N-1)"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d239eyceab40",
+                    "created": 1718725708547,
+                    "text": "面向连接的传输TCP"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d23lsho71kw0",
+                            "created": 1718760622672,
+                            "text": "概述"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d23lskwx8z40",
+                            "created": 1718760629730,
+                            "text": "TCP报文段结构"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d23mdss4m3k0",
+                                    "created": 1718762292502,
+                                    "text": "源端口号+目的端口号"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d23me57fw8o0",
+                                    "created": 1718762319549,
+                                    "text": "序号"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d23merywa8w0",
+                                    "created": 1718762369099,
+                                    "text": "确认号"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d23mevz72ns0",
+                                    "created": 1718762377824,
+                                    "text": "首部长度+保留未用+CWR+ECE+URG+ACK+PSH+RST+SYN+FIN+接收窗口"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d23mfuilruw0",
+                                    "created": 1718762453008,
+                                    "text": "因特网检验和+紧急数据指针"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d23mg1ssm5c0",
+                                    "created": 1718762468862,
+                                    "text": "选项"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d23mg3txar40",
+                                    "created": 1718762473283,
+                                    "text": "数据"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d23lsov0seo0",
+                            "created": 1718760638322,
+                            "text": "TCP往返延时(RTT)和超时"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d23lt1qcz680",
+                            "created": 1718760666339,
+                            "text": "TCP三次握手"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d23mo2nwmeo0",
+                                    "created": 1718763097656,
+                                    "text": "SYN=1,seq=client_isn"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d23mo9vtklc0",
+                                    "created": 1718763113372,
+                                    "text": "SYN=1,seq=server_isn,ack=client_isn+1"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d23mokmvj4w0",
+                                    "created": 1718763136776,
+                                    "text": "SYN=0,seq=client_isn+1,ack=server_isn+1"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d23lt5dhs680",
+                            "created": 1718760674268,
+                            "text": "TCP关闭连接"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d23mp6wbr4w0",
+                                    "created": 1718763185237,
+                                    "text": "FIN,ACK;FIN,ACK"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d23mpgtubdk0",
+                                    "created": 1718763206854,
+                                    "text": "定时等待"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d23mpk8bus80",
+                                    "created": 1718763214260,
+                                    "text": "关闭"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d239faim0400",
+                    "created": 1718725735044,
+                    "text": "拥塞控制原理"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d23mltqfhe00",
+                            "created": 1718762921489,
+                            "text": "端到端拥塞控制"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d23mlxch5i00",
+                            "created": 1718762929353,
+                            "text": "网络辅助拥塞控制"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d239fn2ix0g0",
+                    "created": 1718725762369,
+                    "text": "TCP拥塞控制"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d23mm7h1x2o0",
+                            "created": 1718762951397,
+                            "text": "慢启动(slow-start)：初始小，加速指数级"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d23mrs5wqko0",
+                                    "created": 1718763388257,
+                                    "text": "cwnd的值以1个MSS开始"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d23mvljdmw00",
+                                    "created": 1718763687290,
+                                    "text": "丢包后重置cwnd，ssthresh设置为cwnd/2"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d23mwrtu62w0",
+                                    "created": 1718763779348,
+                                    "text": "拥塞避免：cwnd值为上次遇到拥塞时值的一半"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d23mmedxrvk0",
+                            "created": 1718762966446,
+                            "text": "AIMD：线性增乘性减"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d23mmiwijk80",
+                            "created": 1718762976277,
+                            "text": "超时事件后的保守策略"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d23mxggc6u80",
+                    "created": 1718763832951,
+                    "text": "TCP吞吐量"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d23mxjv91og0",
+                            "created": 1718763840383,
+                            "text": "一条连接平均吞吐量：0.75*W/RTT"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d23mxv8wv140",
+                            "created": 1718763865154,
+                            "text": "高带宽后：1.22*MSS/(RTT*(L^(1/2))"
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

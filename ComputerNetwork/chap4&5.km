@@ -1,0 +1,2751 @@
+{
+    "root": {
+        "data": {
+            "id": "d230nys5uco0",
+            "created": 1718701024788,
+            "text": "Network Layer"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "d230qildzw00",
+                    "created": 1718701224643,
+                    "text": "数据平面(data plane)"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d230qns36r40",
+                            "created": 1718701235932,
+                            "text": "网络层概述"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d230wh677gg0",
+                                    "created": 1718701691733,
+                                    "text": "网络层服务"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d230x6vgryw0",
+                                            "created": 1718701747680,
+                                            "text": "传送段(segment)"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d230xwalfv40",
+                                            "created": 1718701803014,
+                                            "text": "段封装在数据报"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d230y49pdv40",
+                                            "created": 1718701820375,
+                                            "text": "上交段"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d230y785s5s0",
+                                            "created": 1718701826812,
+                                            "text": "网络层协议"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d230y9n5rvc0",
+                                            "created": 1718701832072,
+                                            "text": "路由器检查IP数据报头部"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d230wk8ksy80",
+                                    "created": 1718701698407,
+                                    "text": "关键功能"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d230yhgfz340",
+                                            "created": 1718701849080,
+                                            "text": "转发(forwarding)"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d230ynlh2ag0",
+                                            "created": 1718701862445,
+                                            "text": "路由(routing)"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d230yrobxkw0",
+                                                    "created": 1718701871325,
+                                                    "text": "路由选择算法"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d230yv9yq0o0",
+                                                    "created": 1718701879163,
+                                                    "text": "路由选择协议"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d230wmgyhgw0",
+                                    "created": 1718701703267,
+                                    "text": "网络层层次"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d230yz55kf40",
+                                            "created": 1718701887580,
+                                            "text": "数据平面"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d230z69x3aw0",
+                                                    "created": 1718701903105,
+                                                    "text": "本地，路由器功能"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d230zbol2qo0",
+                                                    "created": 1718701914876,
+                                                    "text": "决定如何转发"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d230zduzpcw0",
+                                                    "created": 1718701919617,
+                                                    "text": "转发方式"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d230zmayi9c0",
+                                                            "created": 1718701937997,
+                                                            "text": "传统：基于目标地址+转发表"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d230zsyube00",
+                                                            "created": 1718701952502,
+                                                            "text": "SDN方式：基于多个字段+流表"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d230z1f1iio0",
+                                            "created": 1718701892531,
+                                            "text": "控制平面"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d23102k78uo0",
+                                                    "created": 1718701973384,
+                                                    "text": "网络范围逻辑"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d23106ou63k0",
+                                                    "created": 1718701982372,
+                                                    "text": "决定如何在路由器间路由"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d2310bqfpiw0",
+                                                    "created": 1718701993352,
+                                                    "text": "控制平面方法"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d2310g2m6340",
+                                                            "created": 1718702002796,
+                                                            "text": "传统路由算法：路由器中实现"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d2310mw442g0",
+                                                            "created": 1718702017640,
+                                                            "text": "soft-ware-defined networking(SDN):逻辑集中的数据平面，由一个远程控制器和本地控制代理(CAs)交互"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d230wpj28hk0",
+                                    "created": 1718701709925,
+                                    "text": "网络服务模型"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d2311mcvgqo0",
+                                            "created": 1718702094841,
+                                            "text": "对单个数据报服务"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d23124d76ww0",
+                                                    "created": 1718702134043,
+                                                    "text": "可靠传送"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d23126c43x40",
+                                                    "created": 1718702138331,
+                                                    "text": "延迟保证"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d2311pxbbso0",
+                                            "created": 1718702102607,
+                                            "text": "对数据报流服务"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d2312a9dm5s0",
+                                                    "created": 1718702146872,
+                                                    "text": "保序"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d2312ckcgx40",
+                                                    "created": 1718702151889,
+                                                    "text": "保证最小带宽"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d2312g4accg0",
+                                                    "created": 1718702159625,
+                                                    "text": "延迟差"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d2311tgq1200",
+                                            "created": 1718702110311,
+                                            "text": "可能提供服务"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d2312it16280",
+                                                    "created": 1718702165475,
+                                                    "text": "确保交付"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d2312kgpagg0",
+                                                    "created": 1718702169083,
+                                                    "text": "确保时延上界"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d2312om3btc0",
+                                                    "created": 1718702178116,
+                                                    "text": "有序"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d2312pzse2w0",
+                                                    "created": 1718702181121,
+                                                    "text": "保证最小带宽"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d2312swews80",
+                                                    "created": 1718702187447,
+                                                    "text": "安全性"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d2311xc8tg80",
+                                            "created": 1718702118747,
+                                            "text": "Internet网络层服务"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d2312uupfnc0",
+                                                    "created": 1718702191698,
+                                                    "text": "尽力而为服务(best-effort service)，都不包含"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d230wvfcm5c0",
+                                    "created": 1718701722761,
+                                    "text": "网络层和传输层连接服务区别"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d2313613i1k0",
+                                            "created": 1718702216029,
+                                            "text": "网络层：两主机之间和路由器"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d2313dk389k0",
+                                            "created": 1718702232414,
+                                            "text": "传输层：两进程之间，端系统上TCP连接"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d230qq4mtb40",
+                            "created": 1718701241044,
+                            "text": "路由器工作原理"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d2313yydeu80",
+                                    "created": 1718702278990,
+                                    "text": "功能"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d23141pi5b40",
+                                            "created": 1718702284985,
+                                            "text": "路由(routing)"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d23142wvns00",
+                                            "created": 1718702287607,
+                                            "text": "转发(forwarding)"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d23167atd940",
+                                    "created": 1718702453885,
+                                    "text": "结构"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d2316a885ps0",
+                                            "created": 1718702460259,
+                                            "text": "输入端口(input port)"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d2318a8plfs0",
+                                                    "created": 1718702617017,
+                                                    "text": "最长前缀匹配(longest prefix matching)"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d2318nfde1c0",
+                                                    "created": 1718702645718,
+                                                    "text": "Head-of-Line(HOL) blocking：最前面的数据报阻止后面的传输"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d2316g2xcog0",
+                                            "created": 1718702472999,
+                                            "text": "交换结构"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d2319j637tc0",
+                                                    "created": 1718702714814,
+                                                    "text": "内存"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d2319txqru80",
+                                                            "created": 1718702738254,
+                                                            "text": "CPU直接控制，拷贝副本到内存"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d2319lkdit40",
+                                                    "created": 1718702720031,
+                                                    "text": "总线"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d2319zf4s740",
+                                                            "created": 1718702750189,
+                                                            "text": "共享总线"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d2319n7ad4w0",
+                                                    "created": 1718702723593,
+                                                    "text": "纵横式"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d231a6an7qo0",
+                                                            "created": 1718702765155,
+                                                            "text": "并发转发，非阻塞式(non-blocking)"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d2316nuu1zs0",
+                                            "created": 1718702489924,
+                                            "text": "输出端口(output port)"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d231apl2u6g0",
+                                                    "created": 1718702807145,
+                                                    "text": "丢包(packet loss)"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d231aw8d8q80",
+                                                    "created": 1718702821614,
+                                                    "text": "需要缓存：N条TCP流缓存大小=RTT*C/(N^(1/2)),C：链路容量"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d2316u440cg0",
+                                            "created": 1718702503546,
+                                            "text": "路由选择处理器"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d231d3myuxk0",
+                                    "created": 1718702994462,
+                                    "text": "分组调度"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d231dh8zj4g0",
+                                            "created": 1718703024092,
+                                            "text": "调度"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d231djgkv2o0",
+                                                    "created": 1718703028905,
+                                                    "text": "选择下一个通过链路传输的分组"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d231dr5r6xs0",
+                                            "created": 1718703045664,
+                                            "text": "FIFO scheduling"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d231dw2ufe00",
+                                            "created": 1718703056372,
+                                            "text": "丢弃策略"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d231e5vm33k0",
+                                                    "created": 1718703077703,
+                                                    "text": "弃尾(tail-drop):丢弃刚到达"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d231eez7ikg0",
+                                                    "created": 1718703097511,
+                                                    "text": "优先权排队(priority queueing):分高优先级和低优先级队列"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d231es1pbwg0",
+                                                    "created": 1718703125960,
+                                                    "text": "随机（random）"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d231f1az3cg0",
+                                            "created": 1718703146112,
+                                            "text": "排队"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d231fjxulgo0",
+                                                    "created": 1718703186677,
+                                                    "text": "非抢占式优先权排队(non-preemptive priority queuing):一旦传输无法打断"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d231g1rgs880",
+                                                    "created": 1718703225473,
+                                                    "text": "循环排队规则(round robin queuing discipline):保持工作排队(work-serving queuing)"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d231gkee57k0",
+                                                    "created": 1718703266042,
+                                                    "text": "加权公平排队(Weighted Fair Queuing,WFQ):每个类在每一循环中获得不同权重的服务量"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d230qvzth140",
+                            "created": 1718701253813,
+                            "text": "网际协议：IPv4、寻址、IPv6及其他"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d231hjvlqnk0",
+                                    "created": 1718703343270,
+                                    "text": "IPv4数据报格式"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d231ijzvyds0",
+                                            "created": 1718703421893,
+                                            "text": "版本：数据报IP协议版本"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d231im0lshc0",
+                                            "created": 1718703426290,
+                                            "text": "首部长度：确定载荷"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d231io1i45c0",
+                                            "created": 1718703430698,
+                                            "text": "服务类型(TOS)：区别不同类型的IP数据报"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d231ipjg7hc0",
+                                            "created": 1718703433960,
+                                            "text": "数据报长度：首部+数据"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d231ittdjj40",
+                                            "created": 1718703443267,
+                                            "text": "标识、标志、片偏移：与分片有关"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d231izp8b080",
+                                            "created": 1718703456077,
+                                            "text": "寿命(Time-To-Live,TTL)"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d231j9lpjt40",
+                                            "created": 1718703477632,
+                                            "text": "协议：6->TCP,17-UDP"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d231jbgqc1s0",
+                                            "created": 1718703481684,
+                                            "text": "首部检验和"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d231jdswn1c0",
+                                            "created": 1718703486774,
+                                            "text": "源和目的IP地址"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d2348egd11k0",
+                                            "created": 1718711089516,
+                                            "text": "选项：允许IP首部被扩展"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d2348gr2r880",
+                                            "created": 1718711094518,
+                                            "text": "数据（有效载荷）"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d231jmqabnk0",
+                                    "created": 1718703506207,
+                                    "text": "IP分片和重组(Fragmentation & Reassembly)"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d2348veyec80",
+                                            "created": 1718711126437,
+                                            "text": "MTU(最大传输单元)-链路层帧所携带的最大数据长度"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d2349bdey740",
+                                            "created": 1718711161172,
+                                            "text": "大的IP数据报在网络上被分片(fregmented)"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d2349k48de80",
+                                                    "created": 1718711180208,
+                                                    "text": "相同ID"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d2349np6pb40",
+                                                    "created": 1718711188005,
+                                                    "text": "不同偏移量"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d2349qwgxsg0",
+                                                    "created": 1718711194976,
+                                                    "text": "最后一个分片标记为0"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d234a3w5v6g0",
+                                            "created": 1718711223255,
+                                            "text": "IP头部信息用于标识、排序分片"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d231k421aug0",
+                                    "created": 1718703543923,
+                                    "text": "IPv4编址"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d234ag6kvpk0",
+                                            "created": 1718711250007,
+                                            "text": "子网(Subnets)"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d234akkzd480",
+                                                    "created": 1718711259585,
+                                                    "text": "IP地址"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d234ao83okg0",
+                                                            "created": 1718711267513,
+                                                            "text": "子网部分(高位bits)"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d234avicp2g0",
+                                                            "created": 1718711283370,
+                                                            "text": "主机部分(低位bits)"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d234ihdlkhc0",
+                                                    "created": 1718711879521,
+                                                    "text": "概念"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d234il7g0vc0",
+                                                            "created": 1718711887856,
+                                                            "text": "IP地址高位部分相同"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d234ipywzzs0",
+                                                            "created": 1718711898225,
+                                                            "text": "无需路由器，物理上相互直接到达"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d234j6d1y280",
+                                                    "created": 1718711933908,
+                                                    "text": "特殊IP地址"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d234j8i989s0",
+                                                            "created": 1718711938576,
+                                                            "text": "子网部分：全为0->本网络"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d234je73fn40",
+                                                            "created": 1718711950962,
+                                                            "text": "主机部分:全为0->本主机"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d234jjaptc00",
+                                                            "created": 1718711962065,
+                                                            "text": "主机部分:全为1->广播地址，该网所有地址"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d234kffkjoo0",
+                                                    "created": 1718712032015,
+                                                    "text": "无类别域间路由选择CIDR(Classles InterDomain Routing)"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d234kyh8u3c0",
+                                                            "created": 1718712073475,
+                                                            "text": "子网部分在任意位置"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d234l3kh46o0",
+                                                            "created": 1718712084555,
+                                                            "text": "地址格式:a.b.c.d/x,x为前缀（prefix）子网号长度"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d234lj4im4w0",
+                                                    "created": 1718712118418,
+                                                    "text": "子网掩码(subnet mask)"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d234m37uieo0",
+                                                            "created": 1718712162155,
+                                                            "text": "1：bit位置标识子网部分"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d234m7f8pe00",
+                                                            "created": 1718712171309,
+                                                            "text": "0：bit位置标识主机部分"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d234mczb53c0",
+                                                    "created": 1718712183407,
+                                                    "text": "DHCP(Dynamic Host Configuration Protocol)"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d234tr9awzc0",
+                                                            "created": 1718712763036,
+                                                            "text": "从服务器动态获取IP地址，也称即插即用(plug-and-play)协议或零配置(zeroconf)协议"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d234vdoy1b40",
+                                                            "created": 1718712890234,
+                                                            "text": "返回：IP地址、第一跳路由器IP地址(默认网关)、DNS服务器IP地址、子网掩码"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d234vunghdc0",
+                                                            "created": 1718712927150,
+                                                            "text": "DHCP发现->DHCP提供->DHCP请求->DHCP ACK"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d234wfhkk7c0",
+                                                    "created": 1718712972506,
+                                                    "text": "ICANN:Internet Coporation for Assigned Names and Numbers"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d234wtoozj40",
+                                                            "created": 1718713003412,
+                                                            "text": "ISP获得一个地址块"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d234wyp4nx40",
+                                                            "created": 1718713014322,
+                                                            "text": "分配地址"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d234x04v9pc0",
+                                                            "created": 1718713017451,
+                                                            "text": "管理DNS"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d234x1tqhzs0",
+                                                            "created": 1718713021131,
+                                                            "text": "分配域名、解决冲突"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d234xbgigzk0",
+                                                    "created": 1718713042099,
+                                                    "text": "NAT(Network Address Translation)"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d234xkmnl880",
+                                                            "created": 1718713062062,
+                                                            "text": "一个IP地址用于所有设备"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d234xqlwzds0",
+                                                            "created": 1718713075078,
+                                                            "text": "可以改变ISP而不改变内部设备地址"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d234xz6wc0w0",
+                                                            "created": 1718713093761,
+                                                            "text": "内部设备地址对外不可见"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d234y3ysbzs0",
+                                                            "created": 1718713104154,
+                                                            "text": "实现条件"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "d234y9absew0",
+                                                                    "created": 1718713115736,
+                                                                    "text": "外出数据包"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "d234ycre8ow0",
+                                                                    "created": 1718713123298,
+                                                                    "text": "记住每个转换替换对"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "d234yiia3yw0",
+                                                                    "created": 1718713135808,
+                                                                    "text": "进入数据包"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d234zze4jso0",
+                                                    "created": 1718713250926,
+                                                    "text": "IPv6头部(Cont)"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d23505qrwns0",
+                                                            "created": 1718713264752,
+                                                            "text": "Priority"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d23508o0mgw0",
+                                                            "created": 1718713271115,
+                                                            "text": "Flow Label"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d2350by3ke00",
+                                                            "created": 1718713278255,
+                                                            "text": "Next Header:标示上层协议"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d2350m3e7mo0",
+                                                    "created": 1718713300343,
+                                                    "text": "和IPv4的其他变化"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d2350qnrru00",
+                                                            "created": 1718713310282,
+                                                            "text": "Checksum：移除"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d2350wp2l8w0",
+                                                            "created": 1718713323422,
+                                                            "text": "Options：头部之外，被Next Header标识"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d23514pogns0",
+                                                            "created": 1718713340873,
+                                                            "text": "ICMPv6"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "d2351c0vt2g0",
+                                                                    "created": 1718713356788,
+                                                                    "text": "增加报文类型"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "d2351elyxfc0",
+                                                                    "created": 1718713362416,
+                                                                    "text": "多播组管理功能"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d2351jrdw200",
+                                                    "created": 1718713373628,
+                                                    "text": "IPv4到IPv6的平移"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d2351ocoeoo0",
+                                                            "created": 1718713383622,
+                                                            "text": "隧道(tunnel)"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d230r64djm00",
+                            "created": 1718701275857,
+                            "text": "通用转发和SDN"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d231l0wnaiw0",
+                                    "created": 1718703615430,
+                                    "text": "主要思路"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d2352947zfk0",
+                                            "created": 1718713428823,
+                                            "text": "数据平面和控制平面分离"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d2352h0s2n40",
+                                            "created": 1718713446029,
+                                            "text": "数据平面-分组交换机"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d2352jxw3mo0",
+                                            "created": 1718713452385,
+                                            "text": "控制平面-控制器+网络应用"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d231l2ydtcw0",
+                                    "created": 1718703619889,
+                                    "text": "SDN数据控制分离优势"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d2352sswrds0",
+                                            "created": 1718713471675,
+                                            "text": "水平集成平面的开放实现"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d2352zn9gvc0",
+                                            "created": 1718713486571,
+                                            "text": "集中式实现控制逻辑，方便管理"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d23535bhby80",
+                                            "created": 1718713498919,
+                                            "text": "允许可编程分组交换机"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d231l8tuezs0",
+                                    "created": 1718703632675,
+                                    "text": "特点"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d2353awvfhc0",
+                                            "created": 1718713511097,
+                                            "text": "通用\"flow-based\"基于流的匹配+行动"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d2353ixtu6g0",
+                                            "created": 1718713528569,
+                                            "text": "控制平面和数据平面分离"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d2353mnol0g0",
+                                            "created": 1718713536662,
+                                            "text": "控制平面功能在数据交换设备外实现"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d2353tlwtfc0",
+                                            "created": 1718713551793,
+                                            "text": "可编程控制应用"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d231lb2zgaw0",
+                                    "created": 1718703637582,
+                                    "text": "流表"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d2353zco0ls0",
+                                            "created": 1718713564294,
+                                            "text": "首段字段值集合"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d235442ue000",
+                                            "created": 1718713574584,
+                                            "text": "计数器集合"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d23546f4wg80",
+                                            "created": 1718713579681,
+                                            "text": "分组匹配流表项的动作集合"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d231lcjej400",
+                                    "created": 1718703640751,
+                                    "text": "OpenFlow数据平面抽象"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d2354duoc800",
+                                            "created": 1718713595858,
+                                            "text": "流：由分组头部字段定义"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d2354i71ca80",
+                                            "created": 1718713605313,
+                                            "text": "通用转发"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d2354qopcps0",
+                                                    "created": 1718713623795,
+                                                    "text": "模式Pattern：头部和流表匹配"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d2354x9lyls0",
+                                                    "created": 1718713638120,
+                                                    "text": "动作：丢弃、转发、修改"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d23552cr95s0",
+                                                    "created": 1718713649194,
+                                                    "text": "优先权Priority"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d23557c46s00",
+                                                    "created": 1718713660040,
+                                                    "text": "计数器Counters"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d230rqmpskw0",
+                    "created": 1718701320501,
+                    "text": "控制平面(control plane)"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d230rv0ij680",
+                            "created": 1718701330043,
+                            "text": "概述"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d235akrqrew0",
+                                    "created": 1718714081103,
+                                    "text": "每路由器控制(Per-router)"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d235aqam4q00",
+                                    "created": 1718714093128,
+                                    "text": "逻辑集中式控制(SDN)"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d230rw9avpk0",
+                            "created": 1718701332751,
+                            "text": "路由选择算法"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d235cujpzn40",
+                                    "created": 1718714259115,
+                                    "text": "路由"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d235d0d1ik00",
+                                            "created": 1718714271771,
+                                            "text": "概念"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d235d22tvy80",
+                                            "created": 1718714275507,
+                                            "text": "输入"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d235d3di94w0",
+                                            "created": 1718714278330,
+                                            "text": "输出"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d235d45m8gw0",
+                                            "created": 1718714280030,
+                                            "text": "最优化原则(optimality principle)"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d235ddd0m680",
+                                                    "created": 1718714300068,
+                                                    "text": "汇集树(sink tree)：最优解形成的树"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d235dpl30kg0",
+                                    "created": 1718714326677,
+                                    "text": "算法原则"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d235dtg2z0w0",
+                                            "created": 1718714335082,
+                                            "text": "正确性(correctness)"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d235e37ftm80",
+                                            "created": 1718714356327,
+                                            "text": "简单性(simplicity)"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d235e6o0hc00",
+                                            "created": 1718714363860,
+                                            "text": "健壮性(robustness)"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d235eb7jru00",
+                                            "created": 1718714373748,
+                                            "text": "稳定性(stability)"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d235ef7q6oo0",
+                                            "created": 1718714382466,
+                                            "text": "公平性(fairness)"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d235ej1igww0",
+                                            "created": 1718714390797,
+                                            "text": "最优性(optimality"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d235eu2dl4o0",
+                                    "created": 1718714414794,
+                                    "text": "算法分类"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d235ewgdr1s0",
+                                            "created": 1718714419995,
+                                            "text": "全局(centralized routing algorithm)"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d235f7bjo1c0",
+                                                    "created": 1718714443647,
+                                                    "text": "每个路由器都有完整信息"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d235fbvysqo0",
+                                                    "created": 1718714453589,
+                                                    "text": "link state算法"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d235fg87e4o0",
+                                            "created": 1718714463036,
+                                            "text": "分布式(decentralized routing algorithm)"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d235fo700h40",
+                                                    "created": 1718714480377,
+                                                    "text": "只知道邻居信息"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d235fslnsqg0",
+                                                    "created": 1718714489971,
+                                                    "text": "迭代计算其他信息"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d235fv7jgg80",
+                                                    "created": 1718714495647,
+                                                    "text": "distance vector算法"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d235g1qf1js0",
+                                            "created": 1718714509849,
+                                            "text": "静态"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d235gazjzbk0",
+                                                    "created": 1718714529993,
+                                                    "text": "非自适应算法(non-adaptive algorithm):事先计算好"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d235gnw2wqw0",
+                                            "created": 1718714558081,
+                                            "text": "动态"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d235gq8yelk0",
+                                            "created": 1718714563213,
+                                            "text": "负载敏感(load-sensitive)"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d235gy4rpeo0",
+                                                    "created": 1718714580374,
+                                                    "text": "感知拥塞水平"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d235h23nc800",
+                                            "created": 1718714589014,
+                                            "text": "负载迟钝(load-insensitive)"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d235hbxphrs0",
+                                    "created": 1718714610422,
+                                    "text": "LS路由"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d235hgomklc0",
+                                            "created": 1718714620757,
+                                            "text": "工作过程"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d235hlu29b40",
+                                                    "created": 1718714631970,
+                                                    "text": "计算相邻节点代价，并组装LS分组描述，扩散发布分组、Dijkstra算法计算最短路径"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d235i5e7p5k0",
+                                            "created": 1718714674547,
+                                            "text": "应用"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d235i8muauo0",
+                                                    "created": 1718714681599,
+                                                    "text": "ISPF协议"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d235ib5jiew0",
+                                                    "created": 1718714687083,
+                                                    "text": "IS-IS(intermediate system-intermediate system"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d235iqyoktc0",
+                                    "created": 1718714721497,
+                                    "text": "距离矢量路由选择(distance vector routing,DV)"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d235j6hizcg0",
+                                            "created": 1718714755288,
+                                            "text": "跳数(hops)、延迟(delay)、队列长度"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d235jmu97pk0",
+                                            "created": 1718714790886,
+                                            "text": "Bellman-Ford方程"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d235jstvoa80",
+                                                    "created": 1718714803924,
+                                                    "text": "dx(y)=minv{c(x,y)+v(y)}"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d235keo6sbk0",
+                                    "created": 1718714851469,
+                                    "text": "距离矢量算法"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d235kpqmwnc0",
+                                            "created": 1718714875562,
+                                            "text": "核心思想：让邻居收到DV时自己运算、更新自己距离矢量"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d235lglbeq80",
+                                            "created": 1718714934014,
+                                            "text": "分布式：每个节点只是在自己的DV改变后向邻居通告"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d235lrf79k80",
+                                            "created": 1718714957588,
+                                            "text": "水平分裂算法(split horizon)"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d235lxe89jc0",
+                                                    "created": 1718714970590,
+                                                    "text": "路由选择环路（routing loop)"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d235m31i9d40",
+                                                    "created": 1718714982882,
+                                                    "text": "增加毒性逆转(poisoned reverse)"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d235mgmsnc00",
+                                            "created": 1718715012467,
+                                            "text": "LS和DV算法比较"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d235mlzus8w0",
+                                                    "created": 1718715024141,
+                                                    "text": "报文复杂性"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d235moemnrk0",
+                                                            "created": 1718715029388,
+                                                            "text": "LS：发送报文O(nE)个，局部路由信息全局传播"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d235n3cew3k0",
+                                                            "created": 1718715061905,
+                                                            "text": "DV:只和邻居交换信息；全局信息局部传播"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d230rz77jso0",
+                            "created": 1718701339155,
+                            "text": "Internet中自治系统内部路由选择：OSPF"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d235njcjxe00",
+                                    "created": 1718715096742,
+                                    "text": "RIP(Routing Information Protocol)"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d235oo9luvk0",
+                                    "created": 1718715185812,
+                                    "text": "自治系统(Autonomous System,AS)"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d235ozlk6iw0",
+                                    "created": 1718715210480,
+                                    "text": "自治系统内部路由选择协议(intra-autonomous system routing protocol)"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d235o2g06940",
+                                    "created": 1718715138310,
+                                    "text": "OSPF(Open Shortest Path First):开放最短路优先"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d235pi34gk80",
+                                            "created": 1718715250724,
+                                            "text": "用洪泛链路状态信息和Dijkstra最低开销路径算法"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d235pvy3szc0",
+                                            "created": 1718715280895,
+                                            "text": "OSPF通告信息"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d235q24r2p40",
+                                                    "created": 1718715294358,
+                                                    "text": "邻居路由器"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d235q6q5iqg0",
+                                                    "created": 1718715304359,
+                                                    "text": "表项"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d235qedjhk00",
+                                            "created": 1718715321011,
+                                            "text": "OSPF通告包"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d235qne1juw0",
+                                                    "created": 1718715340632,
+                                                    "text": "IP直接承载"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d235qzh8u280",
+                                            "created": 1718715366947,
+                                            "text": "优点"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d235r2dkjr40",
+                                                    "created": 1718715373255,
+                                                    "text": "安全"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d235r56xss00",
+                                                    "created": 1718715379385,
+                                                    "text": "多条相同开销路径"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d235r9f5mts0",
+                                                    "created": 1718715388589,
+                                                    "text": "对单播和多播综合支持"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d235rkv3ylc0",
+                                                    "created": 1718715413498,
+                                                    "text": "支持单个AS中的层次结构"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d230saypi2o0",
+                            "created": 1718701364762,
+                            "text": "ISP间路由选择：BGP"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d235rw4895s0",
+                                    "created": 1718715437994,
+                                    "text": "边界网关协议(Border Gateway Protocol,BGP)"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d235ukxyqk80",
+                                            "created": 1718715648763,
+                                            "text": "分布式和异步的协议"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d235uom93880",
+                                            "created": 1718715656762,
+                                            "text": "提供给AS方法"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d235utkiut40",
+                                                    "created": 1718715667541,
+                                                    "text": "eBGP:从相邻的ASes获得子网可达信息"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d235v8s184g0",
+                                                    "created": 1718715700647,
+                                                    "text": "iBGP：将获得的子网可达信息传遍AS内部所有路由器"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d235vps4wq00",
+                                            "created": 1718715737659,
+                                            "text": "路由器类型"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d235vu2hih40",
+                                                    "created": 1718715746992,
+                                                    "text": "网关路由器(gateway router)"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d235w06dz2w0",
+                                                    "created": 1718715760288,
+                                                    "text": "内部路由器(internal router)"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d235wbi43bs0",
+                                            "created": 1718715784942,
+                                            "text": "属性"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d235wer4jzk0",
+                                                    "created": 1718715792017,
+                                                    "text": "AS-PATH"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d235wk8yz6o0",
+                                                            "created": 1718715803980,
+                                                            "text": "检测环路"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d235wo0e7go0",
+                                                            "created": 1718715812169,
+                                                            "text": "向其他AS转发，自己的AS加在路径上"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d235wymt6zk0",
+                                                    "created": 1718715835292,
+                                                    "text": "NEXT-HOP"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d235x3fca600",
+                                                            "created": 1718715845724,
+                                                            "text": "AS-PATH起始的路由器接口的IP地址"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d235xqoxzxc0",
+                                            "created": 1718715896371,
+                                            "text": "热土豆路由选择(hot potato routing)"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d236bwgtqvc0",
+                                                    "created": 1718717006039,
+                                                    "text": "选择具有最小最低开销的网关"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d236d1i2i000",
+                                            "created": 1718717095362,
+                                            "text": "路由器选择算法"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d236d5v86a00",
+                                                    "created": 1718717104865,
+                                                    "text": "指派一个本地偏好(local preference)值"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d236eqbs0800",
+                                                    "created": 1718717227765,
+                                                    "text": "其次最短AS-PATH"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d236evg5f8g0",
+                                                    "created": 1718717238914,
+                                                    "text": "再其次最靠近NEXT-HOP路由器"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d236f3vrugw0",
+                                                    "created": 1718717257273,
+                                                    "text": "最后BGP标识符"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d230sgbdm1k0",
+                            "created": 1718701376412,
+                            "text": "SDN控制平面"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d236fegry000",
+                                    "created": 1718717280310,
+                                    "text": "关键特征"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d236fi7rb6w0",
+                                            "created": 1718717288472,
+                                            "text": "基于流的转发"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d236fx7ai0g0",
+                                                    "created": 1718717321096,
+                                                    "text": "基于运输层、网络层或链路层首部中任意数量的首部字段值进行"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d236fnqj9oo0",
+                                            "created": 1718717300491,
+                                            "text": "数据平面与控制平面分离"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d236frabsf40",
+                                            "created": 1718717308219,
+                                            "text": "网络控制功能"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d236ftixdvs0",
+                                            "created": 1718717313092,
+                                            "text": "可编程网络"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d236gd9lcwg0",
+                                    "created": 1718717356063,
+                                    "text": "控制器功能"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d236gg202540",
+                                            "created": 1718717362135,
+                                            "text": "通信层"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d236givburc0",
+                                                    "created": 1718717368262,
+                                                    "text": "控制器和受控设备，控制器的“南向”接口"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d236gr8ft800",
+                                            "created": 1718717386469,
+                                            "text": "网络范围状态管理层"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d236h1g73mo0",
+                                            "created": 1718717408706,
+                                            "text": "网络控制应用层接口"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d236h75v1cw0",
+                                                    "created": 1718717421141,
+                                                    "text": "“北向”接口与网络控制程序交互"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d236hfezshc0",
+                                    "created": 1718717439108,
+                                    "text": "OpenFlow协议"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d236hhf9r2w0",
+                                            "created": 1718717443478,
+                                            "text": "控制器与SDN交换机交互协议"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d236hmjpxzk0",
+                                            "created": 1718717454631,
+                                            "text": "TCP交换报文，6653默认端口号"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d236hs7osjs0",
+                                            "created": 1718717466964,
+                                            "text": "报文类型"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d236huhifkw0",
+                                                    "created": 1718717471912,
+                                                    "text": "控制器>交换机"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d236hz8spkg0",
+                                                    "created": 1718717482269,
+                                                    "text": "异步(交换机>控制器)"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d236i86pai00",
+                                                    "created": 1718717501733,
+                                                    "text": "对称(misc)"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d236iqycbqo0",
+                                            "created": 1718717542586,
+                                            "text": "控制器到交换机报文"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d236iug5myg0",
+                                                    "created": 1718717550194,
+                                                    "text": "配置"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d236j8pouwo0",
+                                                            "created": 1718717581245,
+                                                            "text": "查询"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d236jaaqxls0",
+                                                            "created": 1718717584695,
+                                                            "text": "设置"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d236iwulm6w0",
+                                                    "created": 1718717555421,
+                                                    "text": "修改状态"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d236jcuz8c00",
+                                                            "created": 1718717590272,
+                                                            "text": "表项"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d236jfgumrk0",
+                                                            "created": 1718717595948,
+                                                            "text": "端口特性"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d236izer9gw0",
+                                                    "created": 1718717560993,
+                                                    "text": "读状态"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d236jnfby8o0",
+                                                            "created": 1718717613271,
+                                                            "text": "统计数据"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d236jp5mqzk0",
+                                                            "created": 1718717617038,
+                                                            "text": "计数器值"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d236j1fyyk80",
+                                                    "created": 1718717565420,
+                                                    "text": "发送分组"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d236juohilk0",
+                                            "created": 1718717629062,
+                                            "text": "受控交换机到控制器报文"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d236n2nn0g00",
+                                                    "created": 1718717881517,
+                                                    "text": "流删除"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d236n6l134o0",
+                                                    "created": 1718717890067,
+                                                    "text": "端口状态"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d236n96zzwg0",
+                                                    "created": 1718717895749,
+                                                    "text": "分组入"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d236nhhxqq80",
+                                            "created": 1718717913824,
+                                            "text": "网络服务应用程序"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d236nng6xo00",
+                                                    "created": 1718717926779,
+                                                    "text": "决定数据平面转发和其它服务如何在受控交换机中完成"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d236nm6s3kw0",
+                                            "created": 1718717924034,
+                                            "text": "SAL"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d236o5j5jio0",
+                                                    "created": 1718717966141,
+                                                    "text": "控制器神经中枢，允许控制器组件和应用程序相互调用服务并订阅它们产生的事件"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d236or72bco0",
+                                            "created": 1718718013299,
+                                            "text": "ODL"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d236ot0ua200",
+                                                    "created": 1718718017276,
+                                                    "text": "OpenDaylight控制器核心"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d236p7p685c0",
+                                            "created": 1718718049222,
+                                            "text": "ONOS控制器"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d236pdtdp8o0",
+                                                    "created": 1718718062537,
+                                                    "text": "北向抽象和协议"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d236pgxosm80",
+                                                    "created": 1718718069328,
+                                                    "text": "分布式核"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d236piyexpk0",
+                                                    "created": 1718718073726,
+                                                    "text": "南向抽象和协议"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d236ppxwgz40",
+                                            "created": 1718718088932,
+                                            "text": "ICMP：Internet控制报文协议"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d236pwwt1ls0",
+                                                    "created": 1718718104103,
+                                                    "text": "主要用途"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d236pyqx8y00",
+                                                            "created": 1718718108101,
+                                                            "text": "差错报告"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d236q3qkxi80",
+                                                    "created": 1718718118964,
+                                                    "text": "报文承载在IP中"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d236qa26gr40",
+                                                    "created": 1718718132726,
+                                                    "text": "类型字段+编码字段"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d236qi9g3lc0",
+                                            "created": 1718718150580,
+                                            "text": "网络管理"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d236qkwfspc0",
+                                                    "created": 1718718156324,
+                                                    "text": "定义"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d236qlwbv140",
+                                                    "created": 1718718158494,
+                                                    "text": "功能"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d236qng4ldk0",
+                                                            "created": 1718718161868,
+                                                            "text": "性能"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d236qovys3c0",
+                                                            "created": 1718718165002,
+                                                            "text": "故障"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d236qpy8wmw0",
+                                                            "created": 1718718167317,
+                                                            "text": "配置"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d236qr645b40",
+                                                            "created": 1718718169970,
+                                                            "text": "账户"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d236qry01ls0",
+                                                            "created": 1718718171656,
+                                                            "text": "安全"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d236r64w7vk0",
+                                                    "created": 1718718202548,
+                                                    "text": "框架"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d236r9jpjm80",
+                                                            "created": 1718718209974,
+                                                            "text": "管理服务器(managing server)"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d236rfeghnk0",
+                                                            "created": 1718718222717,
+                                                            "text": "被管设备(managed device)"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d236rkhetig0",
+                                                            "created": 1718718233779,
+                                                            "text": "管理信息库(Management Information Base,MIB)"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d236rxj4i9s0",
+                                                            "created": 1718718262181,
+                                                            "text": "网络管理代理(network management protocol)"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d236s7mglcw0",
+                                                            "created": 1718718284151,
+                                                            "text": "网络管理协议(network management protocol)"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d236t02ha000",
+                                                    "created": 1718718346069,
+                                                    "text": "简单网络管理协议(Simple Network Management Protocol,SNMP)"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d236terxlw80",
+                                                            "created": 1718718378083,
+                                                            "text": "应用层协议"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d236tifjdsw0",
+                                                            "created": 1718718386041,
+                                                            "text": "在管理服务器和代理管理服务器之间传递网络管理控制和信息报文"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d236tuja1tc0",
+                                                            "created": 1718718412389,
+                                                            "text": "常用"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "d236tyk08kg0",
+                                                                    "created": 1718718421140,
+                                                                    "text": "请求响应模式"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "d236u1yxv000",
+                                                                    "created": 1718718428573,
+                                                                    "text": "陷阱报文(trap message)"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
